@@ -1,0 +1,42 @@
+
+/*清除元素默认的内外边距  */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 顶部浮动 */
+.top{
+    display: flex;
+    justify-content:space-around;
+    flex-grow: 3;
+}
+/* 顶部占位情况 */
+#top_app{
+    flex-grow: 1;
+    width: 100px;
+    text-align: center;
+}
+#top_dock{
+    flex-grow: 5;
+}
+#top_info{
+    flex-grow: 2;
+}
+#top_info img{
+    margin: 5px;
+    width: 30px;
+}
+.left{
+    display: flex;
+    
+    flex-grow: 10;
+}
+.right{
+    display: flex;
+    flex-grow: 10;
+}
+.bottom{
+    display: flex;
+    justify-content:space-around;
+    flex-grow: 1;
+}
