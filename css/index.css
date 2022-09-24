@@ -4,20 +4,24 @@
     padding: 0;
     margin: 0;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+}
 /* 顶部浮动 */
 .top{
     display: flex;
     justify-content:space-around;
-    flex-grow: 3;
+    flex-grow: 1;
+    align-items:center
 }
 /* 顶部占位情况 */
 #top_app{
     flex-grow: 1;
-    width: 100px;
     text-align: center;
 }
 #top_dock{
-    flex-grow: 5;
+    flex-grow: 7;
 }
 #top_info{
     flex-grow: 2;
@@ -26,15 +30,20 @@
     margin: 5px;
     width: 30px;
 }
-.left{
-    display: flex;
-    
+/* 中部浮动 */
+.center{
     flex-grow: 10;
-}
-.right{
     display: flex;
-    flex-grow: 10;
+    flex-direction:row
 }
+#left_dock{
+    flex-grow: 1;
+    flex-direction:column
+}
+#right_app{
+    flex-grow: 35;
+}
+/* 底部浮动 */
 .bottom{
     display: flex;
     justify-content:space-around;
