@@ -38,10 +38,26 @@
 }
 #left_dock{
     flex-grow: 1;
-    flex-direction:column
+    flex-direction:column;
+    display: flex;
+}
+#left_dock_app{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: space-between;
+}
+.dock_app{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 #right_app{
     flex-grow: 35;
+}
+.q_app{
+    width: 100px;
+    background-color: aqua;
 }
 /* 底部浮动 */
 .bottom{

@@ -8,4 +8,7 @@ var t_win_height = win_height*0.08;
 $(".center").css({"height":r_win_height+"px"});
 // $(".top").css({"height":t_win_height+"px"});
 // $(".bottom").css({"height":t_win_height+"px"});
-
+$("#add_app").click(function(){
+    var div_app = $('</div>').html('<div class="q_app" href="javascript:;">删除</div>');
+    $('#add_app').prepend(div_app);
+});
