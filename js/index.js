@@ -1,3 +1,4 @@
+
 var win_width = $(window).innerWidth();
 //获取浏览器高度
 var win_height = $(window).innerHeight();
@@ -12,3 +13,7 @@ $("#add_app").click(function(){
     var div_app = $('</div>').html('<div class="q_app" href="javascript:;">删除</div>');
     $('#add_app').prepend(div_app);
 });
+//var bkimg = "https://api.paugram.com/wallpaper/?source=sm";
+
+
+
