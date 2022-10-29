@@ -7,6 +7,10 @@
 .main{
     display: flex;
     flex-direction: column;
+    /*background-image:linear-gradient(rgba(0, 0, 0, 0.257),rgba(0, 0, 0, 0.116)), url(https://api.paugram.com/wallpaper/?source=sm); 暂时关掉背景aip*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.188),rgba(0, 0, 0, 0.175)), url(https://raw.githubusercontent.com/Guan612/guide-page2/main/image/Five%20minutes%20of%20silence.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 /* 顶部浮动 */
 .top{
@@ -34,7 +38,8 @@
 .center{
     flex-grow: 10;
     display: flex;
-    flex-direction:row
+    flex-direction:row;
+    
 }
 #left_dock{
     flex-grow: 1;
@@ -65,4 +70,8 @@
     display: flex;
     justify-content:space-around;
     flex-grow: 1;
+}
+.time{
+    background-color: rgb(82, 149, 226);
+    
 }

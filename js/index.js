@@ -13,7 +13,24 @@ $("#add_app").click(function(){
     var div_app = $('</div>').html('<div class="q_app" href="javascript:;">删除</div>');
     $('#add_app').prepend(div_app);
 });
-//var bkimg = "https://api.paugram.com/wallpaper/?source=sm";
-
+function dragFunc(time) {
+    var Drag = document.getElementById(time);
+    Drag.onmousedown = function(event) {
+        var ev = event || window.event;
+        event.stopPropagation();
+        var disX = ev.clientX - Drag.offsetLeft;
+        var disY = ev.clientY - Drag.offsetTop;
+        document.onmousemove = function(event) {
+            var ev = event || window.event;
+            Drag.style.left = ev.clientX - disX + "px";
+            Drag.style.top = ev.clientY - disY + "px";
+            Drag.style.cursor = "move";
+        };
+    };
+    Drag.onmouseup = function() {
+        document.onmousemove = null;
+        this.style.cursor = "default";
+    };
+};
 
 
