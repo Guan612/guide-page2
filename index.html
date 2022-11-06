@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" href="https://github.com/xushier/HD-Icons/blob/main/border-radius/Unraid_C.png?raw=true" sizes="192x192"/>
+    <link rel="icon" href="https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/Jellyfin_A.png" sizes="192x192"/>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/tb.css">
+    <link rel="stylesheet" href="./css/window.css">
     <title>桌面导航</title>
 </head>
 <body>
@@ -44,18 +47,84 @@
                     </div>
                     <div class="dock_app">
                         我的
-                    </div> 
+                    </div>
                 </div>
             </div>
             <div id="right_app">图标区
                 <div id="add_app" type="button">点我添加app
-                    <div class="q_app">123</div>
+
                 </div>
                 <div class="time" id="myclock">时钟
                     
                 </div>
                 <div>天气
 
+                </div>
+                <div>
+                    <ul class="right_app_tb wrapper">
+                        <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com" title="京东">
+                                <img src="./image/jd.png" alt="">
+                            </a>
+                            <p class="app_tile">京东</p>
+                        </li>
+                        <!-- <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com">
+                                <img src="./image/add.png" alt="">
+                            </a>
+                        </li> -->
+                        <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com">
+                                <img src="./image/jd.png" alt="">
+                            </a>
+                        </li>
+                        <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com">
+                                <img src="./image/jd.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="drag" class="testwin">
+
+                        <div class="title">
+                       
+                            <h2>这是一个可以拖动的窗口</h2>
+                       
+                            <div>
+                       
+                                <a class="min" href="javascript:;" title="最小化"></a>
+                            
+                                <a class="max" href="javascript:;" title="最大化"></a>
+                            
+                                <a class="revert" href="javascript:;" title="还原"></a>
+                            
+                                <a class="close" href="javascript:;" title="关闭"></a>
+                       
+                            </div>
+                       
+                        </div>
+                       
+                        <div class="resizeL"></div>
+                       
+                        <div class="resizeT"></div>
+                       
+                        <div class="resizeR"></div>
+                       
+                        <div class="resizeB"></div>
+                       
+                        <div class="resizeLT"></div>
+                       
+                        <div class="resizeTR"></div>
+                       
+                        <div class="resizeBR"></div>
+                       
+                        <div class="resizeLB"></div>
+                       
+                        <div class="content">
+                            内容测试
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,5 +136,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
+<script src="./js/tb.js"></script>
+<script src="./js/window.js"></script>
 </body>
 </html>
