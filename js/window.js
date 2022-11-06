@@ -1,53 +1,37 @@
+/*-------------------------- +
+ 获取id, class, tagName
+ +-------------------------- */
 var get = {
 
     byId: function(id) {
-  
       return typeof id === "string" ? document.getElementById(id) : id
-  
     },
   
     byClass: function(sClass, oParent) {
-  
-      var aClass = [];
-  
-      var reClass = new RegExp("(^| )" + sClass + "( |$)");
-  
-      var aElem = this.byTagName("*", oParent);
-  
-      for (var i = 0; i < aElem.length; i++) reClass.test(aElem[i].className) && aClass.push(aElem[i]);
-  
-      return aClass
-  
+      var aClass = []; 
+      var reClass = new RegExp("(^| )" + sClass + "( |$)"); 
+      var aElem = this.byTagName("*", oParent); 
+      for (var i = 0; i < aElem.length; i++) reClass.test(aElem[i].className) && aClass.push(aElem[i]); 
+      return aClass 
     },
-  
     byTagName: function(elem, obj) {
   
       return (obj || document).getElementsByTagName(elem)
   
     }
-  
   };
   
-  var dragMinWidth = 250;
-  
+  var dragMinWidth = 250; 
   var dragMinHeight = 124;
-  
   /*-------------------------- +
-  
    拖拽函数
-  
    +-------------------------- */
   
   function drag(oDrag, handle)
-  
   {
-  
     var disX = dixY = 0;
-  
     var oMin = get.byClass("min", oDrag)[0];
-  
     var oMax = get.byClass("max", oDrag)[0];
-  
     var oRevert = get.byClass("revert", oDrag)[0];
   
     var oClose = get.byClass("close", oDrag)[0];
