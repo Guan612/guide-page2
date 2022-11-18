@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/tb.css">
-    <link rel="stylesheet" href="./css/window.css">
+    <!-- <link rel="stylesheet" href="./css/window.css"> -->
     <title>桌面导航</title>
 </head>
 <body>
@@ -30,6 +30,30 @@
                     <img type="button" class="btn btn-secondary" src="./image/menu.png">
                     <img type="button" class="btn btn-secondary" src="./image/serch.png">
                     <img>
+                    <div id="he-plugin-simple"></div>
+                    <script>
+                        WIDGET = {
+                          "CONFIG": {
+                            "modules": "01234",
+                            "background": "5",
+                            "tmpColor": "000000",
+                            "tmpSize": "16",
+                            "cityColor": "000000",
+                            "citySize": "16",
+                            "aqiColor": "000000",
+                            "aqiSize": "16",
+                            "weatherIconSize": "24",
+                            "alertIconSize": "18",
+                            "padding": "0px 0px 0px 0px",
+                            "shadow": "0",
+                            "language": "auto",
+                            "fixed": "false",
+                            "vertical": "center",
+                            "horizontal": "center",
+                            "key": "0f47b7924cc94e2993de61f5e22e82af"
+                          }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -51,16 +75,7 @@
                 </div>
             </div>
             <div id="right_app">图标区
-                <div id="add_app" type="button">点我添加app
-
-                </div>
-                <div class="time" id="myclock">时钟
-                    
-                </div>
-                <div>天气
-
-                </div>
-                <div>
+                <div id="apps">
                     <ul class="right_app_tb wrapper">
                         <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
                             <a href="http://www.jd.com" title="京东">
@@ -77,54 +92,51 @@
                             <a href="http://www.jd.com">
                                 <img src="./image/jd.png" alt="">
                             </a>
+                            <p class="app_tile">京东1</p>
                         </li>
                         <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
                             <a href="http://www.jd.com">
                                 <img src="./image/jd.png" alt="">
                             </a>
+                            <p class="app_tile">京东2</p>
+                        </li>
+                        <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com" title="京东">
+                                <img src="./image/jd.png" alt="">
+                            </a>
+                            <p class="app_tile">京东</p>
+                        </li>
+                        <!-- <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com">
+                                <img src="./image/add.png" alt="">
+                            </a>
+                        </li> -->
+                        <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com">
+                                <img src="./image/jd.png" alt="">
+                            </a>
+                            <p class="app_tile">京东1</p>
+                        </li>
+                        <li class="app_tb" draggable="true" ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+                            <a href="http://www.jd.com">
+                                <img src="./image/jd.png" alt="">
+                            </a>
+                            <p class="app_tile">京东2</p>
                         </li>
                     </ul>
-                    <div id="drag" class="darg">
+                </div>
+                
+                <div id="add_app" type="button">点我添加app
 
-                        <div class="title">
-                       
-                            <h2>这是一个可以拖动的窗口</h2>
-                       
-                            <div>
-                       
-                                <a class="min" href="javascript:;" title="最小化"></a>
-                            
-                                <a class="max" href="javascript:;" title="最大化"></a>
-                            
-                                <a class="revert" href="javascript:;" title="还原"></a>
-                            
-                                <a class="close" href="javascript:;" title="关闭"></a>
-                       
-                            </div>
-                       
-                        </div>
-                       
-                        <div class="resizeL"></div>
-                       
-                        <div class="resizeT"></div>
-                       
-                        <div class="resizeR"></div>
-                       
-                        <div class="resizeB"></div>
-                       
-                        <div class="resizeLT"></div>
-                       
-                        <div class="resizeTR"></div>
-                       
-                        <div class="resizeBR"></div>
-                       
-                        <div class="resizeLB"></div>
-                       
-                        <div class="content">
-                            内容测试
-                        </div>
-                       
-                    </div>
+                </div>
+                <div class="time" id="myclock">时钟
+                    
+                </div>
+                <div>天气
+
+                </div>
+                <div>
+                    
                 </div>
             </div>
         </div>
@@ -135,6 +147,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 <script src="./js/index.js"></script>
 <script src="./js/tb.js"></script>
 <script src="./js/window.js"></script>
