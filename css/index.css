@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     /*background-image:linear-gradient(rgba(0, 0, 0, 0.257),rgba(0, 0, 0, 0.116)), url(https://api.paugram.com/wallpaper/?source=sm); 暂时关掉背景aip*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.188),rgba(0, 0, 0, 0.175)), url(https://github.com/Guan612/guide-page2/blob/main/image/Five%20minutes%20of%20silence.jpeg?raw=true);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.188),rgba(0, 0, 0, 0.175)), url(https://github.com/Guan612/guide-page2/blob/main/image/Five%20minutes%20of%20silence.jpeg);
     background-size: cover;
     background-position: center;
 }
