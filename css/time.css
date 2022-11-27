@@ -1,0 +1,27 @@
+.clock{
+    display: flex;
+    justify-content: center;
+}
+.clock p{
+    /*width: 1000px;*/
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    /* 设置字体 */
+    font-family: "Kanit";
+    font-weight: 900;
+    /* 文字阴影 实现3D效果 */
+    text-shadow: 0 1px 0 #afddde,
+    0 2px 0 #a8bdbd,
+    0 3px 0 #a1cdd8,
+    0 4px 0 #99cad5,
+    0 5px 0 #92bdd2,
+    0 6px 0 #8bb5cf,
+    0 7px 0 #84a3cc,
+    0 8px 0 #7d99c9,
+    0 0 5px rgba(231,156,156,0.05),
+    0 -1px 3px rgba(231,156,156,0.2),
+    0 9px 9px rgba(231,156,156,0.3),
+    0 12px 12px rgba(231,156,156,0.3),
+    0 15px 15px rgba(231,156,156,0.3);
+}
