@@ -45,5 +45,10 @@ function dragFunc(time) {
         this.style.cursor = "default";
     };
 };
+$("body").bind("contextmenu", function (e) {
+    return false;
+});
+//禁止右键
+
 
 
