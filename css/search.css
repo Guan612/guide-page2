@@ -1,6 +1,7 @@
 #search{
     display: flex;
     justify-content: center;
+
 }
 #seaid{
 	float:left;
@@ -10,7 +11,7 @@
 	border:none;
 	font-size: 18px;
 	text-indent: 1em;
-	background:rgba(255,255,255,.2);
+	background:rgba(19, 18, 18, 0.592);
 }
 #subid{
 	float:left;
