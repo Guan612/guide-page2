@@ -63,6 +63,8 @@
 }
 #right_app{
     flex-grow: 35;
+    display: flex;
+    flex-direction: column;
 }
 .q_app{
     width: 100px;
@@ -80,12 +82,7 @@
     left:50%;
     transform:translate(-50%,-50%);
 }
-#search{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
+
 #note{
     
 }

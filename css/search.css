@@ -1,92 +1,27 @@
-.shell {
-    position: relative;
-    width: 600px;
-    padding: 10px;
-    background-color: #75daff;
-    border-radius: 20px;
-    box-shadow: 0 10px 50px #75efff, 0 0 0 20px #fff;
-}
-
-.shell input {
-    width: 80%;
-    height: 50px;
-    color: #fff;
-    font: 20 30px '优设标题黑';
-    border: 0;
-    background-color: transparent;
-}
-
-.shell input::placeholder {
-    color: #8f36367e;
-}
-
-.shell a {
+#search{
     display: flex;
-    font-size: 30px;
-    position: absolute;
-    right: 60px;
-    top: 10px;
-    color: #fff;
-    width: 50px;
-    height: 20px;
+    justify-content: center;
 }
-
-.shell a .fa {
-    margin: 10px 28px;
-    transition: .3s;
+#seaid{
+	float:left;
+	width: 450px;
+	height: 40px;
+	outline: none;
+	border:none;
+	font-size: 18px;
+	text-indent: 1em;
+	background:rgba(255,255,255,.2);
 }
-
-.shell a .fa-search {
-    transform: translateX(-80px);
-    opacity: 1;
+#subid{
+	float:left;
+	width: 50px;
+	height: 36px;
+	outline: none;
+	background:transparent;
+	border:0;
+	font-size: 18px;
+	background: url("../image/search.svg") no-repeat center;
+	background-position-y: 4px;
+	cursor:pointer;
+	
 }
-
-.shell a .fa-hand-o-right {
-    transform: translateX(-100px);
-    opacity: 0;
-}
-
-.shell a:hover .fa-search {
-    transform: translateX(0);
-    opacity: 0;
-}
-
-.shell a:hover .fa-hand-o-right {
-    transform: translateX(110px);
-    opacity: 1;
-}
-
-.shell a::before {
-    content: 'GO!';
-    position: absolute;
-    display: block;
-    font-size: 20px;
-    background-color: #75e1ff;
-    padding: 5px 30px;
-    top: 50px;
-    right: -25px;
-    border-radius: 10px;
-    transition: .3s;
-    opacity: 0;
-    animation: box 1s infinite ease;
-}
-
-.shell a:hover::before{
-    top: -65px;
-    opacity: 1;
-}
-
-/* @keyframes box {
-    0%{
-        transform: rotate(0deg);
-    }
-    33%{
-        transform: rotate(8deg);
-    }
-    66%{
-        transform: rotate(-8deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-} */
