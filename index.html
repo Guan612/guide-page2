@@ -98,10 +98,15 @@
                 </div>
                 <div id="search">
                     <div class="midbox">
-                        <form action="https://cn.bing.com/search?q=%s"  method="get" target="_blank">
-                            <input type="search" name="wd" id="seaid" placeholder="从这里开始搜索" autofocus="autofocus" autocomplete="off">
+                        <form action="https://cn.bing.com/search?q="  method="get" target="_blank">
+                            <input type="search" name="q" id="seaid" placeholder="从这里开始搜索" autofocus="autofocus" autocomplete="off">
                             <input type="submit" id="subid" value="">
                         </form>
+                        <!-- <form action="https://global.bing.com/search" accept-charset="utf-8" class="search-form" onsubmit="document.getElementById('searchtext').value+=' <%- config.url.replace(/^https?:\/\, '') %>';return true;">
+                            <input id="searchtext" type="search" name="q" maxlength="20" class="search-form-input" placeholder="Search">
+                            <input type="submit" value="" class="search-form-submit">
+                            <input name="ensearch" type="hidden" value="1">
+                        </form> -->
                     </div>
                 </div>
                 <div id="right_center_app" type="button">app区
