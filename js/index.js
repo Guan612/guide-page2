@@ -11,13 +11,8 @@ $(document).ready(function(){
     if(win_width < 600)
     {
         $("#left_dock").hide();
-        $("#right_app").prepend("<div id='open_dock'>点我展开dock</div>");
     }
 });//当宽度小于600自动隐藏
-$("#open_dock").click(function(){
-    $("#left_dock").show();
-    $(this).val("点我折叠");
-});
 
 // $(".top").css({"height":t_win_height+"px"});
 // $(".bottom").css({"height":t_win_height+"px"});
